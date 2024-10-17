@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="heading">Learning Android Development</string>
+    <string name="btnText1">Long Press Me</string>
+    <string name="qs1">Are You Kenyan?</string>
+    <string name="submit">SUBMIT</string>
+    <string name="gender">What is your gender? </string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="rather_not_say">Rather Not Say</string>
+    <string name="send">Send</string>
+    <string name="lauch">Lauch 🎇</string>
+</resources>

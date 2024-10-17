@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        tools:ignore="UselessParent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heading"
+            android:id="@+id/header_title"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/longBtn"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_title"
+            android:layout_marginTop="20dp"
+            android:text="@string/btnText1"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/red"
+            android:shadowColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showText"
+            android:text="@string/app_name"
+            android:layout_below="@+id/longBtn"
+            android:padding="28dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="cursive"
+            android:textSize="28sp"
+            android:textColor="@color/red"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qs1"
+            android:layout_below="@+id/showText"
+            android:id="@+id/checkState"
+            android:checked="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_below="@+id/checkState"
+            android:id="@+id/submitBtn"
+            android:layout_centerHorizontal="true"
+            android:background="@color/design_default_color_on_primary"/>
+
+    </RelativeLayout>
+
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/first"
+       android:layout_marginTop="26dp"
+       android:id="@+id/gender"
+       android:layout_centerHorizontal="true">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/gender"
+           android:textSize="23sp"
+           />
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/male"
+           android:text="@string/male"/>
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/female"
+           android:text="@string/female"/>
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/gay"
+           android:text="@string/rather_not_say"/>
+
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/send"
+               android:onClick="handleSend"/>
+
+
+   </RadioGroup>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="20sp"
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:id="@+id/horiProg"
+        android:padding="20sp"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="26sp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lauch"
+        android:layout_below="@+id/horiProg"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_on_primary"
+        android:id="@+id/startBar"
+        android:textSize="26sp"/>
+
+
+</RelativeLayout>
